@@ -88,7 +88,7 @@ O perfil da aprendiz se baseia em ser proativa, ser aberta a novas aprendizados 
 
 ## :woman_teacher: Mentora
 
-É professora da Unidade Acadêmica de Sistemas e Computação desde 2009, faz parte do Elas desde sua criação tendo muito entusiasmo pelos propósitos dessa organização, em especial a ideia de integração das mulheres no curso e atração de mais mulheres para o curso. Tem desenvolvido alguns trabalhos de pesquisa sobre computação e educação envolvendo também análise de dados acadêmicos da UFCG. Diante da proposta do AndromeDev, viu uma chance de compartilhar os seus conhecimentos na área e de aprender ainda mais com a troca de experiências com a futura aprendiz. 
+Lívia Campos, é professora da Unidade Acadêmica de Sistemas e Computação desde 2009, faz parte do Elas desde sua criação tendo muito entusiasmo pelos propósitos dessa organização, em especial a ideia de integração das mulheres no curso e atração de mais mulheres para o curso. Tem desenvolvido alguns trabalhos de pesquisa sobre computação e educação envolvendo também análise de dados acadêmicos da UFCG. Diante da proposta do AndromeDev, viu uma chance de compartilhar os seus conhecimentos na área e de aprender ainda mais com a troca de experiências com a futura aprendiz. 
 
 ### :loudspeaker: Contatos
 
@@ -104,7 +104,7 @@ O perfil da aprendiz se baseia em ser proativa, ser aberta a novas aprendizados 
 
 ## :clipboard: Sobre a organização
 
-O elas@computação surge com o objetivo de reunir mulheres do curso de Ciência da Computação da Universidade Federal de Campina Grande e também outras mais. Nosso foco é levantar, discutir e impulsionar os assuntos que dizem respeito ao feminino, feminismo, nossos espaços, falas, movimentos e necessidades. A nossa missão é inspirar mulheres mostrando que todas são capazes de trabalhar e serem as melhores profissionais na área que Elas quiserem. Somos uma comunidade que se apoia e que está disposta sempre a acolher novas membras e continuamente ajudá-las a se desenvolverem como mulheres e profissionais. 	
+O Elas@computação surge com o objetivo de reunir mulheres do curso de Ciência da Computação da Universidade Federal de Campina Grande e também outras mais. Nosso foco é levantar, discutir e impulsionar os assuntos que dizem respeito ao feminino, feminismo, nossos espaços, falas, movimentos e necessidades. A nossa missão é inspirar mulheres mostrando que todas são capazes de trabalhar e serem as melhores profissionais na área que Elas quiserem. Somos uma comunidade que se apoia e que está disposta sempre a acolher novas membras e continuamente ajudá-las a se desenvolverem como mulheres e profissionais. 	
 
 
 ##  :telephone: Contatos Elas
