@@ -71,11 +71,11 @@ O perfil da aprendiz se baseia em ser proativa, ser aberta a novas aprendizados 
 
 - [ ] Implementação das visualizações (2 semanas)
 
-- [ ] seleção dos dados relacionado à visualização
+- [ ] Seleção dos dados relacionado à visualização
 
-- [ ] análise dos dados selecionados
+- [ ] Análise dos dados selecionados
 
-- [ ] geração da visualização sobre os dados selecionados
+- [ ] Geração da visualização sobre os dados selecionados
 
 #### 3ª fase de desenvolvimento
 
