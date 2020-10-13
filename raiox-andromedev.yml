@@ -1,0 +1,9 @@
+name: raiox-andromedev
+channels:
+  - defaults
+dependencies:
+  - python==3.7.3
+  - pandas
+  - numpy
+  - black
+
