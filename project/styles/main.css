@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+}
+
+h1 {
+    font-size: 4vh;
+    padding-top: 20vh;
+    text-align: center;    
+    font-family: 'Poppins', sans-serif;
+    color:#d27c90;
+}
+
+#sobre h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4858;
+    font-size: 3vh;
+    font-weight: 300;
+    line-height: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 0vh;
+}
+
+#contato h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4858;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.topnav {
+    background-color: #fff6f3;
+    box-shadow: rgba(43,43,43,0.53) 1px 2px 8px;
+}
+
+.topnav a {
+    color: #d27c90;
+    font-size: 2.7vh;
+    font-family: 'Poppins' !important;
+    font-weight: 500 !important;
+    border-bottom: solid 0.4vh #fff6f3;
+}
+
+#topnav-raio-x:hover,
+#topnav-sobre:hover ,
+#topnav-contato:hover {
+    color: #d27c90;
+    border-bottom: solid 0.4vh #d27c90;
+}
+
+.topnav li {
+    padding-right: 5vh;
+}
+
+.btn {
+    background-color: #fff6f3 !important;
+    color:  #d27c90 !important;
+    font-family: 'Poppins' !important;
+    font-weight: 500 !important;
+    font-size: 2.7vh !important;
+}
+
+.btn:focus {
+    outline: none!important;
+}
+
+.list-group-item-action:hover {background: #95f507;}
+
+#background-raio-x {
+    background-color: rgb(248, 255, 251);
+}
+
+#background-image {
+    padding: 10vh;
+    padding-top: 20vh;
+    height: 100vh;
+}
+
+#content {
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+#raio-x {
+    height: 100vh;
+}
+
+#contato {
+    height: 40vh;
+    background-image: url('../assets/background-footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#fff6f3;
+    box-shadow: rgba(43,43,43,0.53) 1px 2px 8px;
+}
+
+#contato h1 {
+    color: #d27c90;
+    padding-top:2vh;
+    padding-left: 3vh;
+}
+
+.icon{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.icon {
+    color: #a66f96;
+}
+
+.icon:hover {
+    color: #75648d;
+}
