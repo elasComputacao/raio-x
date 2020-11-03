@@ -12,6 +12,7 @@
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="project/styles/main.css" />
     <link rel="stylesheet" href="project/styles/back_to_top.css" />
+    <link rel="stylesheet" href="project/styles/responsive.css" />
 
     <!-- font -->
     <link
@@ -23,6 +24,12 @@
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="project/bootstrap/bootstrap.min.css" />
+
+    <!-- vegalite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
 
     <!--icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -62,10 +69,10 @@
 
                 <ul class="nav navbar-nav flex-row float-right">
                     <li class="nav-item">
-                        <a class="nav-link" id="topnav-sobre" href="#sobre">Sobre</a>
+                        <a class="nav-link" id="topnav-raio-x" href="#raio-x">Raio-X</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="topnav-raio-x" href="#raio-x">Raio-X</a>
+                        <a class="nav-link" id="topnav-sobre" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="topnav-contato" href="#contato">Contato</a>
@@ -77,8 +84,8 @@
                             Idioma
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Portugues</a>
-                            <a class="dropdown-item" href="#">Ingles</a>
+                            <a class="dropdown-item" href="#">Português</a>
+                            <a class="dropdown-item" href="#">Inglês</a>
                         </div>
                     </li>
                 </ul>
@@ -95,8 +102,22 @@
         </section>
 
         <div id="content">
+            <section id="raio-x" class="container-fluid">
+                <h1 class="text-left">Raio-X</h1>
+                <h3>Quantas entram no curso?</h3>
+                <div id="vis1"></div>
+                <h3>Quem entra no curso?</h3>
+                <div id="vis2"></div>
+                <div id="vis3"></div>
+                <div id="vis4"></div>
+                <div id="vis5"></div>
+                <div id="vis6"></div>
+                <div id="vis7"></div>
+                
+            </section>
+
             <section id="sobre" class="container-fluid">
-                <h1>Sobre</h1>
+                <h1 class="text-left">Sobre</h1>
                 <h3>
                     A ideia geral deste projeto é desenvolver um ambiente web para
                     mostrar informações sobre a participação das mulheres no curso de
@@ -111,9 +132,6 @@
                 </h3>
             </section>
 
-            <section id="raio-x" class="container-fluid">
-                <h1>Raio-X</h1>
-            </section>
         </div>
     </div>
 
@@ -131,23 +149,25 @@
             <div class="row">
                 <div class="col-4">
                     <div class="card">
-                        <div class="row no-gutters">
-                            <div class="col-2 text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                            </div>
-                            <div class="col-10">
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Universidade Federal de Campina Grande - UFCG
-                                    </p>
+                        <a href="https://goo.gl/maps/xx1zhPUttKVzUSTQ6" target="_blank">
+                            <div class="row no-gutters">
+                                <div class="col-2 text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="col-10">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Universidade Federal de Campina Grande - UFCG
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -184,25 +204,29 @@
             <div class="row">
                 <div class="col-4">
                     <div class="card">
-                        <div class="row no-gutters">
-                            <div class="col-2 text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                    </path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </div>
-                            <div class="col-10">
-                                <div class="card-body">
-                                    <p class="card-text">elas@computacao.ufcg.edu.br</p>
+                        <a href="mailto:elas@computacao.ufcg.edu.br">
+                            <div class="row no-gutters">
+                                <div class="col-2 text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="col-10">
+                                    <div class="card-body">
+                                        <p class="card-text">elas@computacao.ufcg.edu.br</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
+
+
 
                 <div class="col-4 text-center">
                     <img src="project/assets/logo-elas-horizontal.png" style="height: 8vh" />
@@ -211,6 +235,7 @@
 
                 <div class="col-4"></div>
             </div>
+            
         </footer>
     </section>
 </body>
@@ -223,5 +248,16 @@
 <script type="text/javascript" src="project/functions/back_to_top.js"></script>
 <script type="text/javascript" src="project/functions/smothscroll.js"></script>
 <script type="text/javascript" src="project/functions/mouseMonitoring.js"></script>
+
+<!-- visualizations -->
+<script type="text/javascript" src="project/visus/js/ingresso.js"></script>
+<script type="text/javascript" src="project/visus/js/raca.js"></script>
+<script type="text/javascript" src="project/visus/js/nota.js"></script>
+<script type="text/javascript" src="project/visus/js/cota.js"></script>
+<script type="text/javascript" src="project/visus/js/idade.js"></script>
+<script type="text/javascript" src="project/visus/js/conclusao-geral.js"></script>
+<script type="text/javascript" src="project/visus/js/conclusao-mulheres.js"></script>
+
+
 
 </html>

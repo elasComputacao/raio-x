@@ -10,22 +10,7 @@ h1 {
     color:#d27c90;
 }
 
-#sobre h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #2f4858;
-    font-size: 3vh;
-    font-weight: 300;
-    line-height: 5vh;
-    padding-top: 5vh;
-    padding-bottom: 0vh;
-}
-
-#contato h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #2f4858;
-    font-size: 2.5vh;
-    font-weight: 500;
-}
+/* topnav */
 
 .topnav {
     background-color: #fff6f3;
@@ -63,14 +48,13 @@ h1 {
     outline: none!important;
 }
 
-.list-group-item-action:hover {background: #95f507;}
-
 #background-raio-x {
     background-color: rgb(248, 255, 251);
+    height: 100%;
+    width: 100%;
 }
 
 #background-image {
-    padding: 10vh;
     padding-top: 20vh;
     height: 100vh;
 }
@@ -80,10 +64,21 @@ h1 {
     padding-right: 20vh;
 }
 
-#raio-x {
-    height: 100vh;
+#sobre h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4858;
+    font-size: 3vh;
+    font-weight: 300;
+    line-height: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
 }
 
+#raio-x {
+}
+
+
+/* contato */
 #contato {
     height: 40vh;
     background-image: url('../assets/background-footer.png');
@@ -100,6 +95,13 @@ h1 {
     padding-left: 3vh;
 }
 
+#contato h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4858;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
 .icon{
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -113,4 +115,24 @@ h1 {
 
 .icon:hover {
     color: #75648d;
+}
+
+.card a:hover {
+    text-decoration: none;
+    color: #2f4858;
+}
+
+.card .card-body {
+    color: #2f4858;
+
+}
+
+.card .col-2 {
+    color: white;
+    background-color: #a66f96;
+}
+
+.card a:hover .col-2{
+    text-decoration: none; 
+    background-color:  #75648d;
 }
