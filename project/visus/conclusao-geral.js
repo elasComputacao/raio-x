@@ -1,4 +1,4 @@
-{
+var yourV6Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "config": {"view": {"stroke": ""}},
     "title":"Porcentagem da conclusão geral desde 2000.1",
@@ -112,7 +112,7 @@
       {"calculate": "ceil (datum.id/10)", "as": "row"},
       {"calculate": "datum.id - datum.row*10", "as": "col"}
     ],
-    "mark": {"type": "point", "filled": true},
+    "mark": {"type": "point", "filled": true, "tooltip":true},
     "encoding": {
       "x": {"field": "col", "type": "ordinal", "axis": null},
       "y": {"field": "row", "type": "ordinal", "axis": null},
@@ -136,5 +136,6 @@
       "size": {"value": 90}
     },
     "selection": {"highlight": {"type": "interval"}}
-  }
+  };
+  vegaEmbed('#vis6', yourV6Spec);
   

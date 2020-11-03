@@ -1,9 +1,9 @@
-{
+var yourV2Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "title": "Tipo de cor das mulheres por periodo",
     "width": 700,
     "height": 250,
-    "data": {"url": "../dados/raca.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/raca.csv"},
     "mark": {
         "type": "circle",
         "opacity": 0.8,
@@ -34,7 +34,7 @@
         "aggregate":"count",
         "title": "Quantidade",
         "legend": {"clipHeight": 30},
-        "scale": {"rangeMax": 5000}
+        "scale": {"rangeMax": 500}
       },
 
       "color": {
@@ -43,4 +43,5 @@
         "legend": null
       }
     }
-}
+};
+vegaEmbed('#vis2', yourV2Spec);

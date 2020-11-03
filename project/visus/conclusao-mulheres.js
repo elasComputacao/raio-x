@@ -1,7 +1,7 @@
-{
+var yourV7Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "config": {"view": {"stroke": ""}},
-    "title":"Porcentagem da conclusão geral desde 2000.1",
+    "title":"Porcentagem da conclusão das mulheres desde 2000.1",
     "width": 400,
     "height": 400,
     "data": {
@@ -71,7 +71,7 @@
         {"id": 63, "tipo":"Graduado"},
         {"id": 64, "tipo":"Graduado"},
         {"id": 65, "tipo":"Graduado"},
-        {"id": 66, "tipo":"Graduado"},
+        {"id": 66, "tipo":"Regular"},
         {"id": 67, "tipo":"Regular"},
         {"id": 68, "tipo":"Regular"},
         {"id": 69, "tipo":"Regular"},
@@ -95,8 +95,8 @@
         {"id": 87, "tipo":"Regular"},
         {"id": 88, "tipo":"Regular"},
         {"id": 89, "tipo":"Regular"},
-        {"id": 90, "tipo":"Regular"},
-        {"id": 91, "tipo":"Regular"},
+        {"id": 90, "tipo":"Reingresso"},
+        {"id": 91, "tipo":"Reingresso"},
         {"id": 92, "tipo":"Reingresso"},
         {"id": 93, "tipo":"Reingresso"},
         {"id": 94, "tipo":"Reingresso"},
@@ -112,7 +112,7 @@
       {"calculate": "ceil (datum.id/10)", "as": "row"},
       {"calculate": "datum.id - datum.row*10", "as": "col"}
     ],
-    "mark": {"type": "point", "filled": true},
+    "mark": {"type": "point", "filled": true, "tooltip":true},
     "encoding": {
       "x": {"field": "col", "type": "ordinal", "axis": null},
       "y": {"field": "row", "type": "ordinal", "axis": null},
@@ -136,5 +136,6 @@
       "size": {"value": 90}
     },
     "selection": {"highlight": {"type": "interval"}}
-  }
+  };
+  vegaEmbed('#vis7', yourV7Spec);
   
