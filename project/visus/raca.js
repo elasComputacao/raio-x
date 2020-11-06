@@ -1,6 +1,6 @@
 var yourV2Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title": "Tipo de cor das mulheres por periodo",
+    "title": "Distribuição de raça das mulheres por período",
     "width": 700,
     "height": 250,
     "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/raca.csv"},
@@ -17,7 +17,7 @@ var yourV2Spec = {
       "x": {
         "field": "periodo_ingresso", 
         "type": "nominal", 
-        "title": "Periodos",
+        "title": "Período",
         "axis": {"grid": false}
       },
 
@@ -40,6 +40,11 @@ var yourV2Spec = {
       "color": {
         "field": "nome_cor", 
         "type": "nominal", 
+        "scale": {
+          "domain": ["Amarela", "Branca", "Não declarada", "Parda", "Preta"],
+          "scheme": "category20"
+        },
+        "scheme": "accent",
         "legend": null
       }
     }

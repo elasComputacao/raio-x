@@ -1,20 +1,31 @@
 var yourV5Spec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/idade.csv"},
-  "mark": {"type":"bar", "tooltip": true},
-  "title": "Idade média das meninas ao ingressarem no curso, por período",
-  "encoding": {
-    "x": {
-      "field": "periodo_ingresso",
-      "type": "nominal",
-      "title": "Periodo do ingresso"
-    },
-    "y": {
-      "field": "idade_ingresso", 
-      "aggregate": "sum",
-      "title": "Idade ao ingressar"
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-brutos/alunos_raiox.csv"},
+    "mark": "bar",
+    "transform": [
+      {
+        "filter": "datum.idade_ingresso > 0"
+      }
+    ],
+    "width": 700,
+    "height": 200,
+    "encoding": {
+      "x": {
+        "bin": {"maxbins": 25},
+        "field": "idade_ingresso",
+        "title": "Idade de ingresso"
+      },
+      "y": {
+        "aggregate": "count",
+        "title": "Contagem"
+      },
+      "color": {
+         "scale": {
+          "range": ["#F1C40F"]
+        }
+      },
     }
   }
-  };
+  ;
   vegaEmbed("#vis5", yourV5Spec);
   

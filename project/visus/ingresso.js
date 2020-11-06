@@ -13,6 +13,7 @@ var yourV1Spec = {
     },
     "y": {
       "field": "contagem", 
+      "type": "quantitative",
       "aggregate": "sum",
       "title": "Quantidade de alunos(as)"
     },
@@ -20,12 +21,16 @@ var yourV1Spec = {
       "field": "sexo",
       "type": "nominal",
       "scale": {
-        "domain": ["Feminino", "Masculino"],
-        "range": ["#e7ba52", "#1f77b4"]
+        "domain": ["Masculino","Feminino"],
+        "scheme": "set2"
       },
       "title": "Sexo"
+    },
+    "order": {
+      "aggregate": "sum", 
+      "field": "contagem"
     }
-  }
-  };
+  }};
+
   vegaEmbed("#vis1", yourV1Spec);
   

@@ -125,12 +125,7 @@ var yourV7Spec = {
         "legend": null,
         "scale": {
           "domain": ["Evadido", "Graduado", "Regular", "Reingresso"],
-          "range": [
-            "#b31200",
-            "#21ae00",
-            "#f5f100",
-            "#143bd5"
-          ]
+          "scheme": "set2"
         }
       },
       "size": {"value": 90}

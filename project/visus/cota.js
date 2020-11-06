@@ -1,31 +1,33 @@
 var yourV4Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Tipo de cota das mulheres por periodo",
-  "width": 500,
-  "height": 300,
   "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/cotas.csv"},
-  "mark": {"type":"area", "tooltip": true},
-  
+  "width": 700,
+  "height": 250,
+  "mark": {"type":"bar", "tooltip": true},
   "encoding": {
-    
-    "x": {
+    "y": {
       "field": "periodo_ingresso", 
       "type": "nominal", 
-      "title": "Periodos"
+      "title": "Periodo",
+      "sort": "-y"
     },
-
-    "y": {
-      "field": "forma_reserva_vagas", 
+    "x": {
+      "field": "forma_reserva_vagas",
+      "aggregate": "count",
       "type": "quantitative",
-      "aggregate":"count",
-      "stack": "zero",
-      "title": "Quantidade de vagas"
+      "title": ""
     },
-      
+    "order": {
+      "field": "forma_reserva_vagas"
+    },
     "color": {
-      "field": "forma_reserva_vagas", 
-      "type": "nominal", 
-      "title": "Tipo de vaga"
+      "field": "forma_reserva_vagas",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Escola", "Escola Cor", "Escola Cor Deficiencia", "Escola Renda", "Escola Renda Cor", "Escola Renda Cor Deficiencia", "Escola Renda Deficiencia"],
+      "scheme": "set2"
+      },
+      "title": "Cota"
     }
   }
 };
