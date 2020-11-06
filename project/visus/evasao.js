@@ -14,15 +14,15 @@ var yourV8Spec = {
       {
         "name": "table",
         "values": [
-          {"key": "ABANDONO", "value": 63, "category": 0},
-          {"key": "NOVO INGRESSO MESMO CURSO", "value": 55, "category": 0},
-          {"key": "REPROVOU TODAS POR FALTAS", "value": 45, "category": 0},
-          {"key": "3 REPROV MESMA DISCIPLINA", "value": 43, "category": 0},
-          {"key": "SOLICITACAO ALUNO", "value": 28, "category": 0},
-          {"key": "NOVO INGRESSO OUTRO CURSO", "value": 6, "category": 0},
-          {"key": "MUDANCA CURSO", "value": 2, "category": 0},
-          {"key": "DECISAO JUDICIAL", "value": 1, "category": 0},
-          {"key": "TRANSFERENCIA OUTRA IES", "value": 1, "category": 0}
+          {"key": "A", "value": 63, "category": 0},
+          {"key": "NIMC", "value": 55, "category": 0},
+          {"key": "RTPF", "value": 45, "category": 0},
+          {"key": "3REPROV", "value": 43, "category": 0},
+          {"key": "SA", "value": 28, "category": 0},
+          {"key": "NIOC", "value": 6, "category": 0},
+          {"key": "MC", "value": 2, "category": 0},
+          {"key": "DJ", "value": 1, "category": 0},
+          {"key": "TIES", "value": 1, "category": 0}
         ]
       },
       {
