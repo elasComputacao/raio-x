@@ -1,10 +1,11 @@
 var yourV5Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-brutos/alunos_raiox.csv"},
-    "mark": "bar",
+    "mark": {"type":"bar", "tooltip": true},
     "transform": [
       {
-        "filter": "datum.idade_ingresso > 0"
+        "filter": "datum.idade_ingresso > 0",
+        "filter": "datum.periodo_ingresso >= 2000.1"
       }
     ],
     "width": 700,
