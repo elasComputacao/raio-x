@@ -2,7 +2,7 @@
 
 <p  align="center">
 
-<img  src="https://github.com/elasComputacao/Raio-X/blob/master/assets/logo%20elas.png?raw=true"  heigth="80"  width="180"/>
+<img  src="https://github.com/elasComputacao/Raio-X/blob/master/assets/logo-elas.png?raw=true"  heigth="80"  width="180"/>
 
 <p/>
 
