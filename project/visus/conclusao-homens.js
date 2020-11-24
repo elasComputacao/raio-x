@@ -1,13 +1,13 @@
-var yourV7Spec = {
+var yourV6Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "config": {"view": {"stroke": ""}},
     "title": {
-      "text":"Situação academica das mulheres desde 2000.1",
+      "text":"Situação academica dos homens desde 2000.1",
       "fontSize": 15
     },
     "width": 400,
     "height": 400,
-    "data": { "url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/situacao-academica-mulheres.json"},
+    "data": { "url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/situacao-academica-homens.json"},
     "transform": [
       {"calculate": "ceil (datum.id/10)", "as": "row"},
       {"calculate": "datum.id - datum.row*10", "as": "col"}
@@ -17,7 +17,7 @@ var yourV7Spec = {
       "x": {"field": "col", "type": "ordinal", "axis": null},
       "y": {"field": "row", "type": "ordinal", "axis": null},
       "shape": {
-        "value": "M 2 -2 M 2 -2 c 0.3 -0.2 0.6 -0.5 0.6 -0.9 c 0 -0.6 -0.4 -1 -1 -1 c -0.6 0 -1 0.4 -1 1 c 0 0.4 0.2 0.7 0.4 0.9 h 0 L 0 1 M 0 1 M 0 1 M 0 1 M 0 1 L 0 1 c 0 0.3 0.3 0.6 0.6 0.6 h 0.2 c 0 0 0 0.1 0 0.1 v 1.9 c 0 0.3 0.2 0.6 0.3 0.6 h 1.3 c 0.2 0 0.3 -0.3 0.3 -0.6 v -1.8 c 0 0 0 -0.1 0 -0.1 h 0.2 c 0.3 0 0.6 -0.3 0.6 -0.6 L 2 -2 z M 2 -2"
+        "value": "M1.7 -1.7h-0.8c0.3 -0.2 0.6 -0.5 0.6 -0.9c0 -0.6 -0.4 -1 -1 -1c-0.6 0 -1 0.4 -1 1c0 0.4 0.2 0.7 0.6 0.9h-0.8c-0.4 0 -0.7 0.3 -0.7 0.6v1.9c0 0.3 0.3 0.6 0.6 0.6h0.2c0 0 0 0.1 0 0.1v1.9c0 0.3 0.2 0.6 0.3 0.6h1.3c0.2 0 0.3 -0.3 0.3 -0.6v-1.8c0 0 0 -0.1 0 -0.1h0.2c0.3 0 0.6 -0.3 0.6 -0.6v-2c0.2 -0.3 -0.1 -0.6 -0.4 -0.6z"
       },
       "color": {
         "field": "tipo",
@@ -32,5 +32,5 @@ var yourV7Spec = {
     },
     "selection": {"highlight": {"type": "interval"}}
   };
-  vegaEmbed('#vis7', yourV7Spec);
+  vegaEmbed('#vis6', yourV6Spec);
   

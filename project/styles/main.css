@@ -3,11 +3,32 @@ body {
 }
 
 h1 {
-    font-size: 4vh;
-    padding-top: 20vh;
+    font-size: 4vh !important;
+    padding-top: 7vh;
     text-align: center;    
     font-family: 'Poppins', sans-serif;
     color:#d27c90;
+}
+
+h3 {
+    padding-top: 5vh;
+    font-size: 3vh !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700 !important;
+    line-height: 5vh !important;
+    color:#2f4858;
+}
+
+h6 {
+    font-size: 2.7vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400 !important;
+    line-height: 5vh !important;
+    color:#2f4858;
+}
+
+#popover {
+    text-decoration: underline;
 }
 
 /* topnav */
@@ -25,15 +46,13 @@ h1 {
     border-bottom: solid 0.4vh #fff6f3;
 }
 
-#topnav-raio-x:hover,
-#topnav-sobre:hover ,
-#topnav-contato:hover {
+.topnav a:hover {
     color: #d27c90;
     border-bottom: solid 0.4vh #d27c90;
 }
 
 .topnav li {
-    padding-right: 5vh;
+    padding-right: 2vh;
 }
 
 .btn {
@@ -64,23 +83,27 @@ h1 {
     padding-right: 20vh;
 }
 
-#sobre h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #2f4858;
-    font-size: 3vh;
-    font-weight: 300;
-    line-height: 5vh;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
+/* banco de ideias */
+.btn-banco-de-ideias {
+    text-decoration: none;
+    padding: 2vh;
+    color: white;
+    background-color: #f1a699;
+    border-radius: 1vh;
+    margin-right: 4vh !important;
+    margin-bottom: 10vh;
 }
 
-#raio-x {
+.btn-banco-de-ideias:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #f19181;
 }
 
 
 /* contato */
 #contato {
-    height: 40vh;
+    height: auto;
     background-image: url('../assets/background-footer.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -98,8 +121,10 @@ h1 {
 #contato h6 {
     font-family: 'Montserrat', sans-serif;
     color: #2f4858;
-    font-size: 2.5vh;
-    font-weight: 500;
+    font-size: 1.9vh !important;
+    font-weight: 600 !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .icon{

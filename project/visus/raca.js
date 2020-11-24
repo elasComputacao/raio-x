@@ -1,8 +1,16 @@
 var yourV2Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "title": "Distribuição de raça das mulheres por período",
-    "width": 700,
-    "height": 250,
+    "title": {
+      "text":"Distribuição da raça das mulheres",
+      "fontSize": 15
+    },
+    "width": 900,
+    "height":300,
+    "autosize": {
+      "resize": true,
+      "type": "fit",
+      "contains": "width"
+    },
     "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/raca.csv"},
     "mark": {
         "type": "circle",
@@ -24,8 +32,7 @@ var yourV2Spec = {
       "y": {
         "field": "nome_cor", 
         "type": "nominal",
-        "title": "Tipos de raças",
-        "axis": {"title": ""}
+        "title": "Tipos de raças"
       },
 
       "size": {

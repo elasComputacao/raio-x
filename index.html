@@ -30,10 +30,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
-
     <!--icones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="project/favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="project/favicon/apple-icon-60x60.png" />
@@ -57,7 +57,8 @@
 <body>
     <section id="section-header" class="container-fluid">
         <header>
-            <nav class="navbar fixed-top justify-content-between navbar-expand flex-nowrap flex-row topnav" id="topnav">
+            <nav class="navbar smart-scroll fixed-top justify-content-between navbar-expand flex-nowrap flex-row topnav"
+                id="topnav">
                 <ul class="navbar-nav float-left">
                     <li class="nav-item">
                         <a class="nav-link" id="topnav-home" href="#main">
@@ -75,9 +76,13 @@
                         <a class="nav-link" id="topnav-raio-x" href="#raio-x">Raio-X</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" id="topnav-banco-de-ideias" href="#banco-de-ideias">Banco de ideias</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" id="topnav-contato" href="#contato">Contato</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
+                    <!--
+                    <li class="nav-item dropdown">
                         <a class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             onclick="if (document.activeElement != document.body) document.activeElement.blur();">
@@ -87,7 +92,8 @@
                             <a class="dropdown-item" href="#">Português</a>
                             <a class="dropdown-item" href="#">Inglês</a>
                         </div>
-                    </li> -->
+                    </li>
+                    -->
                 </ul>
             </nav>
         </header>
@@ -104,44 +110,223 @@
         <div id="content">
             <section id="sobre" class="container-fluid">
                 <h1 class="text-left">Sobre</h1>
-                <h3>
-                    A ideia geral deste projeto é desenvolver um ambiente web para
-                    mostrar informações sobre a participação das mulheres no curso de
-                    Bacharelado em Ciência da Computação da UFCG (por exemplo, dados
-                    acadêmicos, mapa de egressas e depoimentos). No contexto do
-                    Andromedev, iremos criar nesse ambiente visualizações de dados
-                    acadêmicos (provenientes do controle acadêmico) incluindo
-                    quantitativos de mulheres que entram no curso, taxa de evasão e
-                    conclusão e taxa de sucesso. Esse ambiente será acessado a partir do
-                    site do elas@computação e tem o objetivo de motivar mais a
-                    comunidade e levar esse incentivo para fora da UFCG também.
-                </h3>
+                <h6>
+                    A ideia geral do projeto é o desenvolvimento de um ambiente web para mostrar informações sobre a
+                    participação das mulheres no curso de Bacharelado em Ciência da Computação da Universidade Federal
+                    de Campina Grande (UFCG). No contexto do Andromedev, foi desenvolvido visualizações de dados
+                    acadêmicos provenientes do controle acadêmico. O Raio-X é um estudo que permite conhecer um pouco
+                    sobre a participação das mulheres no curso ao longo da sua história. Para tal, foi utilizado os
+                    dados acadêmicos disponibilizados pela UFCG a partir de 2000, quando temos dados mais completos, é
+                    importante ressaltar que os alunos
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="Aluno que saiu do curso e ingressou novamente com uma nova matrícula.">
+                        reincidentes
+                    </a>
+
+                    não foram desconsiderados nas análises.
+                </h6>
             </section>
-            
+
             <section id="raio-x" class="container-fluid">
                 <h1 class="text-left">Raio-X</h1>
+                <h6>
+                    O curso de bacharelado em Ciência da Computação foi criado em 1976 e começou a funcionar em 1977
+                    ainda enquanto Universidade Federal da Paraíba (UFPB), sendo um dos primeiros cursos formadores de
+                    profissionais em informática do país. O primeiro projeto pedagógico do curso foi atualizado em 1999
+                    com efeito em 2000.1 e a última atualização entrou em vigor em 2018. Em 2002 teve origem a
+                    Universidade Federal de Campina Grande (UFCG) a partir do desmembramento da UFPB, com os campus de
+                    Campina Grande (sede), Patos, Sumé, Cajazeiras, Souza, Pombal e Cuité. Com a implantação do REUNI em
+                    2007 a UFCG aumentou progressivamente o número de vagas ofertadas no curso, e hoje tem-se duas
+                    entradas de 90 vagas cada uma. Um outro fato histórico relevante foi a mudança no processo seletivo
+                    para entrada na universidade que a partir de 2011 passou a usar somente o ENEM, tendo aderido ao
+                    SISU em 2014. Atualmente o curso possui em torno de 750 alunos ativos e mais de 1000 alunos
+                    graduados. Destaca-se ainda como um curso de excelência pelo MEC, através do ENADE, e recebeu a
+                    avaliação máxima do Guia de Estudante da editora Abril por mais de 10 anos, até 2018. Em 2019 a
+                    Folha de São Paulo deu 5 estrelas e o 13 lugar entre os melhores cursos do Brasil, e recentemente em
+                    2020 pelo ranking do Estadão o curso foi classificado como um dos 9 melhores do país. A partir desse
+                    contexto, vamos iniciar analisando a entrada no curso desde 2000.1 até 2020.1.
+
+                </h6>
                 <h3>Quantas entram no curso?</h3>
-                <div id="vis1"></div>
+                <h6>
+                    A princípio, é importante observar quantas mulheres entraram no curso ao longo dos períodos. Para
+                    visualizar o ingresso geral dos alunos no curso, foi analisada a quantidade de homens e mulheres que
+                    entram a cada período.
+                </h6>
+                <div class="d-flex justify-content-center">
+                    <div id="vis1"></div>
+                </div>
+                <h6>
+
+                    A partir dos dados explicitados, é possível obter a média percentual de ingresso feminino, que é de
+                    16,11%. Desde 2007 houve a implantação do REUNI, programa que aumentou progressivamente o número de
+                    vagas ofertadas no curso, o que justifica o acréscimo no número de ingressantes, ao longo dos anos o
+                    percentual de mulheres tende a aumentar e a partir dessa medida houve também um impacto positivo no
+                    ingresso de mulheres no curso, já que de 2007.1 até 2020.1 houve um aumento de 0,8% no número de
+                    mulheres ingressantes no curso.
+                    Vale ainda ressaltar que como os reingressantes não foram descartados para os estudos, pode-se
+                    observar que a partir de 2017, quando as regras para
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="Quando o aluno cancela sua matrícula e entra novamente no curso dispensando as disciplinas que ja cursou, excluindo assim, suas reprovações do histórico.">
+                        "limpeza"
+                    </a>
+
+                    de currículo foram estabelecidas, a
+                    quantidade de alunos ingressando no curso diminuiu levemente se comparada de 2012 a 2016.
+
+                </h6>
                 <h3>Quem entra no curso?</h3>
-                <div id="vis2"></div>
-                <div id="vis3"></div>
-                <div id="vis4"></div>
-                <div id="vis5"></div>
+                <h6>
+                    Após analisar a quantidade de ingressantes no curso, é fundamental analisar quem são as mulheres que
+                    ingressam. Para definir os ingressantes foi considerado os dados sobre raça autodeclarada, nota de
+                    ingresso, tipo de cota utilizada e idade.
+
+                </h6>
+                <div class="d-flex justify-content-center">
+                    <div id="vis2"></div>
+                </div>
+                <h6>
+                    As raças são autodeclaradas, ou seja, o aluno que deseja ingressar na universidade informa sua raça
+                    ou não, caso seja cotista, a autodeclaração do candidato goza da presunção relativa de veracidade,
+                    devendo ser submetida à validação de Comissão de Validação da Autodeclaração da UFCG para receber
+                    devida comprovação e assim ingressar na universidade. Analisando os dados raciais podemos notar que
+                    apesar da maior quantidade de mulheres ingressantes serem brancas e pardas, a diversidade de raças
+                    vem aumentando com o passar dos anos, mais mulheres pretas e amarelas tem entrado no curso. Além
+                    disso, o número de mulheres com raça não declarada zerou nos últimos 6 anos.
+
+                </h6>
+                <div class="d-flex justify-content-center">
+                    <div id="vis3"></div>
+                </div>
+                <h6>
+                    Nos anos 2000 era utilizado o vestibular como forma de ingresso na universidade, a prova era
+                    realizada anualmente, em duas etapas, cada etapa durava dois dias, sendo intermediada pela UFCG e a
+                    partir de 2011 a universidade passou a adotar o ENEM como avaliação de ingresso, prova realizada uma
+                    vez no ano durante dois dias por intermédio do MEC em todo o país. Ambas as provas tinham pontuação
+                    máxima de 1000 pontos, o que não interferiu na visualização dos dados. Considerando o desempenho das
+                    mulheres no vestibular para ingresso no curso, é possível calcular a média de notas das mulheres,
+                    que é equivalente a 629,24 pontos, sendo bem próxima da média geral de notas de todos os alunos, que
+                    é de 629,82 pontos.
+
+                </h6>
+                <div class="d-flex justify-content-center">
+                    <div id="vis4"></div>
+                </div>
+                <h6>
+                    As cotas remetem para um tipo de política de ações afirmativas para diminuir as desigualdades
+                    socioeconômicas e educacionais em uma sociedade. No Brasil, a Lei de Cotas foi aprovada em 2012 e
+                    previa que até 2016 todas as instituições federais de ensino superior e técnico deveriam destinar
+                    50% das vagas a estudantes oriundos das escolas públicas.
+                    Esse percentual deveria ser dividido da seguinte forma: 25% das vagas para estudantes oriundos da
+                    rede pública com ensino médio completo e renda igual ou inferior a 1,5 salário mínimo e 25% para
+                    aqueles com renda igual ou superior a 1,5 salário mínimo. Nessa divisão ainda seria destinado um
+                    percentual para pretos, pardos e indígenas, conforme o último Censo Demográfico do Instituto
+                    Brasileiro de Geografia e Estatística (IBGE).
+                    Considerando o uso de cotas pelas mulheres do curso, é possível analisar que a maior parte das cotas
+                    utilizadas pelas ingressantes são as cotas de “Candidato autodeclarado preto, pardo ou indígena, com
+                    renda familiar bruta per capita igual ou inferior a 1,5 salário mínimo que tenha cursado
+                    integralmente o ensino médio em escola pública”, além disso, podemos notar que as mulheres que
+                    ingressam no curso tem diferentes tipos de cota, incluindo, ao longo dos anos, mais mulheres de
+                    diferentes origens.
+
+                </h6>
+                <div class="d-flex justify-content-center">
+                    <div id="vis5"></div>
+                </div>
+                <h6>
+                    Quanto a idade das ingressantes, a maior parte das mulheres do curso ingressaram com 18 anos, o que
+                    representa 32,38% do total de mulheres ingressantes durante os últimos 20 anos de curso. Entretanto,
+                    há extremos, como mulheres que ingressaram com 17 e 39 anos, cada uma representando apenas 0,2% do
+                    total de mulheres ingressantes.
+
+                </h6>
+
                 <h3>Qual a situação acadêmica até então?</h3>
-                <div id="vis6"></div>
-                <div id="vis7"></div>
-                <div id="vis8"></div>
-                
-                
+                <h6>
+                    A situação acadêmica envolve o “status” de todos os alunos do curso a partir de 2000.1 até 2020.1.
+                    Cada boneco na visualização significa 1% do total de alunos, logo a porcentagem está arredondada
+                    para se adequar a visualização. Estão representados os alunos que evadiram (que saíram do curso
+                    antes de concluí-lo), os alunos graduados, os alunos regulares (que ainda estão cursando a
+                    graduação) e os alunos reingressantes (que saíram do curso e retornaram com nova matrícula).
+                </h6>
+                <div class="d-flex justify-content-center">
+                    <div id="vis6"></div>
+                    <div id="vis7"></div>
+                </div>
+                <h6>
+                    Quanto à situação acadêmica das mulheres, foi possível analisar que a taxa de conclusão das mulheres
+                    é de 26,68%, ou seja, nos últimos 20 anos se formaram 131 mulheres. A porcentagem de mulheres que se
+                    formam é muito próxima a porcentagem dos homens cujo valor é 27,36%. A taxa de evasão de homens e
+                    mulheres é praticamente igual, tendo os homens 37,52% e as mulheres 38,49%. A seguir vamos analisar
+                    especificamente a evasão das mulheres.
+
+                </h6>
+
+                <div class="d-flex justify-content-center">
+                    <div id="vis8"></div>
+                </div>
+                <h6>
+                    É comum observar que ao longo do curso, o número de alunos nas turmas vai diminuindo, pois a
+                    trajetória de um estudante em um curso superior nem sempre corresponde às suas expectativas,
+                    dificilmente o aluno se sente completamente satisfeito com o curso escolhido ou com o ambiente
+                    universitário.
+                    O principal motivo de evasão é o abandono. Entretanto, há uma série de fatores que podem motivar
+                    este abandono, como perda de identificação com o curso, estado patológico, dentre outros. Assim como
+                    na evasão por “reprovação por falta”, que pode ter as mesmas motivações. Se observados ambas as
+                    evasões, estes dois fatores representam 44,26% dos motivos pelos quais uma aluna evade do curso,
+                    valor próximo da metade, o que é um resultado esperado, visto seu contexto.
+                    Assim, analisando separadamente, podemos notar que o abandono do curso é a maior causa de evasão das
+                    mulheres, com 25,82% do total de evadidas. Em segundo lugar está o reingresso no mesmo curso, ou
+                    seja, as estudantes que cancelaram sua matrícula e entraram novamente no curso limpando o seu
+                    currículo, estas representam 22,54% das evadidas e diferente dos demais tipos de evasão, essas
+                    mulheres ainda tem a chance de se graduarem normalmente no curso. Logo após tem a evasão por
+                    reprovação, dessas a mais frequente é a reprovação por faltas com 18,44%, em seguida a evasão por 3
+                    reprovações em uma mesma disciplina, nesse caso, o aluno ainda pode recorrer com um processo que,
+                    caso seja negado, leva ao cancelamento da matrícula do aluno. Este, por sua vez, pode tentar novo
+                    vestibular e voltar para o curso, representando 17,62% do valor total de ingressantes femininas.
+                </h6>
+            </section>
+
+            <section id="banco-de-ideias" class="container-fluid">
+                <h1 class="text-left">Banco de ideias</h1>
+                <h6>
+                    O banco de ideias tem como objetivo ser um espaço aberto para contribuição de ideias para o futuro
+                    do Raio-X das mulheres do curso de Ciência da Computação na Universidade Federal de Campina Grande
+                    (UFCG). O Elas@Computação enquanto organização iniciou esse projeto e pretende aprofundar as
+                    análises aqui realizadas. Para isso, é importante ouvirmos a comunidade open source a respeito de
+                    melhorias e aprimoramentos que podem ser realizados no futuro.
+                    Para contribuir com o futuro das análises do Raio-X, acesse nosso Banco de ideias
+                    e crie sua issue com sugestões.
+                    Acesse todos os dados utilizados nas
+                    visualizações e as estatisticas apresentadas nesta análise e contribua com o nosso banco de ideias:
+                </h6>
+
+                <div class="d-flex justify-content-center">
+                    <a class="btn-banco-de-ideias" alt="Base de dados" target="_blank" title="Base de dados"
+                        href="https://github.com/elasComputacao/raio-x-dados" type="button">
+                        Base de dados
+                    </a>
+                    <a class="btn-banco-de-ideias" alt="Contribuir com o banco de ideias" target="_blank"
+                        title="Contribuir com o banco de ideias"
+                        href="https://github.com/elasComputacao/Raio-X/projects/2">
+                        Contribuir com o banco de ideias
+                    </a>
+                </div>
+
             </section>
 
         </div>
     </div>
 
+    <!-- Back to top button -->
+    <a id="button"></a>
+
     <section class="container-fluid" id="contato">
         <footer>
-            <!-- Back to top button -->
-            <a id="button"></a>
 
             <div class="row">
                 <div class="col-lg">
@@ -150,93 +335,96 @@
             </div>
 
             <div class="row">
-                <div class="col-4">
-                    <div class="card">
-                        <a href="https://goo.gl/maps/xx1zhPUttKVzUSTQ6" target="_blank">
-                            <div class="row no-gutters">
-                                <div class="col-2 text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="col-10">
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            Universidade Federal de Campina Grande - UFCG
-                                        </p>
+                <div class="col-lg-4">
+                    <div class="row no-gutters">
+                        <div class="card col-12">
+                            <a href="https://goo.gl/maps/xx1zhPUttKVzUSTQ6" target="_blank">
+                                <div class="row no-gutters">
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <svg class="align-self-center justify-content-center"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-text">
+                                                Universidade Federal de Campina Grande - UFCG
+                                            </h6>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="card col-12">
+                            <a href="mailto:elas@computacao.ufcg.edu.br">
+                                <div class="row no-gutters">
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <svg class="align-self-center justify-content-center"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body">
+                                            <h6 class="card-text">elas@computacao.ufcg.edu.br</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-5"></div>
+                <div class="col-lg-4 col-md-0 col-sm-0"></div>
 
-                <div class="col-1">
-                    <a href="https://www.instagram.com/elascomputacao" class="col-lg icon" target="_blank">
-                        <span class="fa-stack fa-3x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </div>
-
-                <div class="col-1">
-                    <a href="https://github.com/elasComputacao" class="col-lg icon" target="_blank">
-                        <span class="fa-stack fa-3x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </div>
-
-                <div class="col-1">
-                    <a href="https://elascomputacao.github.io/" class="col-lg icon" target="_blank">
-                        <span class="fa-stack fa-3x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="row d-flex float-left">
+                            <a href="https://www.instagram.com/elascomputacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                           <a href="https://github.com/elasComputacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://elascomputacao.github.io/" class="icon" target="_blank">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://dev.to/elascomputacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <div class="card">
-                        <a href="mailto:elas@computacao.ufcg.edu.br">
-                            <div class="row no-gutters">
-                                <div class="col-2 text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path
-                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                        </path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="col-10">
-                                    <div class="card-body">
-                                        <p class="card-text">elas@computacao.ufcg.edu.br</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <div class="col-4 text-center">
-                    <img src="project/assets/logo-elas-horizontal.png" style="height: 8vh" />
+            <div class="row" style="padding-bottom: 2vh;">
+                <div class="col d-flex justify-content-center align-items-end">
+                    <img src="project/assets/logo-elas-horizontal.png" style="height: 6vh" />
                     <h6>© 2020 Elas@Computação</h6>
                 </div>
-
-                <div class="col-4"></div>
             </div>
             
         </footer>
@@ -250,7 +438,8 @@
 <!-- functions -->
 <script type="text/javascript" src="project/functions/back_to_top.js"></script>
 <script type="text/javascript" src="project/functions/smothscroll.js"></script>
-<script type="text/javascript" src="project/functions/mouseMonitoring.js"></script>
+<script type="text/javascript" src="project/functions/popover.js"></script>
+<script type="text/javascript" src="project/functions/smartscroll.js"></script>
 
 <!-- visualizations -->
 <script type="text/javascript" src="project/visus/ingresso.js"></script>
@@ -258,9 +447,8 @@
 <script type="text/javascript" src="project/visus/nota.js"></script>
 <script type="text/javascript" src="project/visus/cota.js"></script>
 <script type="text/javascript" src="project/visus/idade.js"></script>
-<script type="text/javascript" src="project/visus/conclusao-geral.js"></script>
+<script type="text/javascript" src="project/visus/conclusao-homens.js"></script>
 <script type="text/javascript" src="project/visus/conclusao-mulheres.js"></script>
 <script type="text/javascript" src="project/visus/evasao.js"></script>
-
 
 </html>

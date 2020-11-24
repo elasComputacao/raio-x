@@ -1,21 +1,22 @@
 var yourV1Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Quantidade de ingressantes no curso ao longo dos períodos",
-  "width": 700,
-  "height": 200,
+  "title": {
+    "text":"Quantidade de ingressantes no curso",
+    "fontSize": 15
+  },
   "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/ingresso.csv"},
   "mark": {"type":"bar", "tooltip": true},
   "encoding": {
     "x": {
       "field": "periodo_ingresso",
       "type": "ordinal",
-      "title": "Periodo do ingresso"
+      "title": "Periodo de ingresso"
     },
     "y": {
       "field": "contagem", 
       "type": "quantitative",
       "aggregate": "sum",
-      "title": "Quantidade de alunos(as)"
+      "title": "Quantidade de alunos"
     },
     "color": {
       "field": "sexo",

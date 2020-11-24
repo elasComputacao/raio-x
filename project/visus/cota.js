@@ -1,6 +1,10 @@
 var yourV4Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/cotas.csv"},
+  "title": {
+    "text":"Tipos de cota utilizadas pelas ingressantes",
+    "fontSize": 15
+  },
   "width": 700,
   "height": 250,
   "mark": {"type":"bar", "tooltip": true},
@@ -15,7 +19,7 @@ var yourV4Spec = {
       "field": "forma_reserva_vagas",
       "aggregate": "count",
       "type": "quantitative",
-      "title": ""
+      "title": "Quantidade de vagas utilizadas"
     },
     "order": {
       "field": "forma_reserva_vagas"
