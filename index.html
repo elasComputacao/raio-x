@@ -31,9 +31,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
     <!--icones-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="project/favicon/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="project/favicon/apple-icon-60x60.png" />
@@ -55,9 +56,9 @@
 </head>
 
 <body>
-    <section id="section-header" class="container-fluid">
+    <section onmousemove="mouseMonitoring(event)" id="section-header" class="container-fluid">
         <header>
-            <nav class="navbar smart-scroll fixed-top justify-content-between navbar-expand flex-nowrap flex-row topnav"
+            <nav class="navbar fixed-top smart-scroll justify-content-between navbar-expand flex-nowrap flex-row topnav"
                 id="topnav">
                 <ul class="navbar-nav float-left">
                     <li class="nav-item">
@@ -100,11 +101,11 @@
     </section>
 
     <div id="main">
-        <section id="background-raio-x" class="container-fluid">
-            <div class="text-center">
-                <img class="img-fluid img-responsive" id="background-image" src="project/assets/background-raio-x.png"
-                    alt="Logo Raio-X" />
+        <section id="background">
+            <div id="background-raio-x" class="img-fluid img-responsive">
             </div>
+            <h6 class="text-center">Raio-X</h6>
+            <h3 class="text-center">Resgate histórico das mulheres de computação@ufcg</h3>
         </section>
 
         <div id="content">
@@ -114,7 +115,8 @@
                     A ideia geral do projeto é o desenvolvimento de um ambiente web para mostrar informações sobre a
                     participação das mulheres no curso de Bacharelado em Ciência da Computação da Universidade Federal
                     de Campina Grande (UFCG). No contexto do Andromedev, foi desenvolvido visualizações de dados
-                    acadêmicos provenientes do controle acadêmico. O Raio-X é um estudo que permite conhecer um pouco
+                    acadêmicos provenientes do controle acadêmico. <br>
+                    O Raio-X é um estudo que permite conhecer um pouco
                     sobre a participação das mulheres no curso ao longo da sua história. Para tal, foi utilizado os
                     dados acadêmicos disponibilizados pela UFCG a partir de 2000, quando temos dados mais completos, é
                     importante ressaltar que os alunos
@@ -142,10 +144,20 @@
                     entradas de 90 vagas cada uma. Um outro fato histórico relevante foi a mudança no processo seletivo
                     para entrada na universidade que a partir de 2011 passou a usar somente o ENEM, tendo aderido ao
                     SISU em 2014. Atualmente o curso possui em torno de 750 alunos ativos e mais de 1000 alunos
-                    graduados. Destaca-se ainda como um curso de excelência pelo MEC, através do ENADE, e recebeu a
-                    avaliação máxima do Guia de Estudante da editora Abril por mais de 10 anos, até 2018. Em 2019 a
-                    Folha de São Paulo deu 5 estrelas e o 13 lugar entre os melhores cursos do Brasil, e recentemente em
-                    2020 pelo ranking do Estadão o curso foi classificado como um dos 9 melhores do país. A partir desse
+                    graduados. <br>
+                    Destaca-se ainda como um curso de excelência pelo MEC, através do ENADE, e recebeu a
+                    avaliação máxima do Guia de Estudante da editora Abril por mais de 10 anos, até 2018. Em 2019 no
+                    <a href="https://ruf.folha.uol.com.br/2019/ranking-de-cursos/computacao/" target="_blank">
+                        ranking da Folha de São Paulo
+                    </a>
+                    , foram atribuidas 5 estrelas e o 13 lugar entre os melhores cursos do Brasil, e
+                    recentemente em
+                    2020 pelo
+                    <a href="https://publicacoes.estadao.com.br/guia-da-faculdade/?post_type=faculdades_2020&s=ciencia+da+computacao&tipo=&modalidade=&estado=&cidade=&classificacao="
+                        target="_blank">
+                        ranking do Estadão
+                    </a>
+                    o curso foi classificado como um dos 9 melhores do país. A partir desse
                     contexto, vamos iniciar analisando a entrada no curso desde 2000.1 até 2020.1.
 
                 </h6>
@@ -162,10 +174,8 @@
 
                     A partir dos dados explicitados, é possível obter a média percentual de ingresso feminino, que é de
                     16,11%. Desde 2007 houve a implantação do REUNI, programa que aumentou progressivamente o número de
-                    vagas ofertadas no curso, o que justifica o acréscimo no número de ingressantes, ao longo dos anos o
-                    percentual de mulheres tende a aumentar e a partir dessa medida houve também um impacto positivo no
-                    ingresso de mulheres no curso, já que de 2007.1 até 2020.1 houve um aumento de 0,8% no número de
-                    mulheres ingressantes no curso.
+                    vagas ofertadas no curso, o que justifica o acréscimo no número de ingressantes. De 2007.1 até
+                    2020.1 houve um aumento de 0,8% no número de mulheres ingressantes no curso.
                     Vale ainda ressaltar que como os reingressantes não foram descartados para os estudos, pode-se
                     observar que a partir de 2017, quando as regras para
 
@@ -193,10 +203,11 @@
                     As raças são autodeclaradas, ou seja, o aluno que deseja ingressar na universidade informa sua raça
                     ou não, caso seja cotista, a autodeclaração do candidato goza da presunção relativa de veracidade,
                     devendo ser submetida à validação de Comissão de Validação da Autodeclaração da UFCG para receber
-                    devida comprovação e assim ingressar na universidade. Analisando os dados raciais podemos notar que
-                    apesar da maior quantidade de mulheres ingressantes serem brancas e pardas, a diversidade de raças
-                    vem aumentando com o passar dos anos, mais mulheres pretas e amarelas tem entrado no curso. Além
-                    disso, o número de mulheres com raça não declarada zerou nos últimos 6 anos.
+                    devida comprovação e assim ingressar na universidade. <br>
+                    Analisando os dados raciais podemos notar que apesar da maior quantidade de mulheres ingressantes
+                    serem brancas e pardas, a diversidade de raças vem aumentando com o passar dos anos, mais mulheres
+                    pretas e amarelas tem entrado no curso. Além disso, o número de mulheres com raça não declarada
+                    zerou nos últimos 6 anos.
 
                 </h6>
                 <div class="d-flex justify-content-center">
@@ -207,7 +218,8 @@
                     realizada anualmente, em duas etapas, cada etapa durava dois dias, sendo intermediada pela UFCG e a
                     partir de 2011 a universidade passou a adotar o ENEM como avaliação de ingresso, prova realizada uma
                     vez no ano durante dois dias por intermédio do MEC em todo o país. Ambas as provas tinham pontuação
-                    máxima de 1000 pontos, o que não interferiu na visualização dos dados. Considerando o desempenho das
+                    média máxima de 1000 pontos, o que não interferiu na visualização dos dados. <br>
+                    Considerando o desempenho das
                     mulheres no vestibular para ingresso no curso, é possível calcular a média de notas das mulheres,
                     que é equivalente a 629,24 pontos, sendo bem próxima da média geral de notas de todos os alunos, que
                     é de 629,82 pontos.
@@ -218,14 +230,17 @@
                 </div>
                 <h6>
                     As cotas remetem para um tipo de política de ações afirmativas para diminuir as desigualdades
-                    socioeconômicas e educacionais em uma sociedade. No Brasil, a Lei de Cotas foi aprovada em 2012 e
-                    previa que até 2016 todas as instituições federais de ensino superior e técnico deveriam destinar
-                    50% das vagas a estudantes oriundos das escolas públicas.
+                    socioeconômicas e educacionais em uma sociedade. No Brasil, a
+                    <a href="http://portal.mec.gov.br/cotas/legislacao.html" target="_blank">
+                        Lei de Cotas
+                    </a>
+                    foi aprovada em 2012 e previa que até 2016 todas as instituições federais de ensino superior e
+                    técnico deveriam destinar 50% das vagas a estudantes oriundos das escolas públicas.
                     Esse percentual deveria ser dividido da seguinte forma: 25% das vagas para estudantes oriundos da
                     rede pública com ensino médio completo e renda igual ou inferior a 1,5 salário mínimo e 25% para
                     aqueles com renda igual ou superior a 1,5 salário mínimo. Nessa divisão ainda seria destinado um
                     percentual para pretos, pardos e indígenas, conforme o último Censo Demográfico do Instituto
-                    Brasileiro de Geografia e Estatística (IBGE).
+                    Brasileiro de Geografia e Estatística (IBGE). <br>
                     Considerando o uso de cotas pelas mulheres do curso, é possível analisar que a maior parte das cotas
                     utilizadas pelas ingressantes são as cotas de “Candidato autodeclarado preto, pardo ou indígena, com
                     renda familiar bruta per capita igual ou inferior a 1,5 salário mínimo que tenha cursado
@@ -270,39 +285,116 @@
                     <div id="vis8"></div>
                 </div>
                 <h6>
-                    É comum observar que ao longo do curso, o número de alunos nas turmas vai diminuindo, pois a
-                    trajetória de um estudante em um curso superior nem sempre corresponde às suas expectativas,
-                    dificilmente o aluno se sente completamente satisfeito com o curso escolhido ou com o ambiente
-                    universitário.
-                    O principal motivo de evasão é o abandono. Entretanto, há uma série de fatores que podem motivar
-                    este abandono, como perda de identificação com o curso, estado patológico, dentre outros. Assim como
-                    na evasão por “reprovação por falta”, que pode ter as mesmas motivações. Se observados ambas as
-                    evasões, estes dois fatores representam 44,26% dos motivos pelos quais uma aluna evade do curso,
-                    valor próximo da metade, o que é um resultado esperado, visto seu contexto.
-                    Assim, analisando separadamente, podemos notar que o abandono do curso é a maior causa de evasão das
-                    mulheres, com 25,82% do total de evadidas. Em segundo lugar está o reingresso no mesmo curso, ou
-                    seja, as estudantes que cancelaram sua matrícula e entraram novamente no curso limpando o seu
-                    currículo, estas representam 22,54% das evadidas e diferente dos demais tipos de evasão, essas
-                    mulheres ainda tem a chance de se graduarem normalmente no curso. Logo após tem a evasão por
-                    reprovação, dessas a mais frequente é a reprovação por faltas com 18,44%, em seguida a evasão por 3
-                    reprovações em uma mesma disciplina, nesse caso, o aluno ainda pode recorrer com um processo que,
-                    caso seja negado, leva ao cancelamento da matrícula do aluno. Este, por sua vez, pode tentar novo
-                    vestibular e voltar para o curso, representando 17,62% do valor total de ingressantes femininas.
+                    A evasão escolar é um problema que envolve fatores pessoais, sociais, econômicos e institucionais.
+                    Tais fatores estão fortemente interligados, o que torna o problema ainda mais desafiador. Por
+                    exemplo, é possível que uma aluna abandone o curso tanto por questões pessoais (não se identificou
+                    com a área) quanto por questões financeiras (precisa trabalhar para se manter ao longo do curso e
+                    não consegue conciliar as duas atividades). Existem vários estudos que analisam os fatores mais
+                    relevantes e como atuar sobre eles, inclusive no âmbito da UFCG.
+
+                    Considerando os fatores institucionais, no
+                    <a href="http://www.cfp.ufcg.edu.br/geo/RESOLUCAO_26_2007.pdf" target="_blank">
+                        regulamento Nº 26/2007 UFCG/CSE
+                    </a>
+                    são listadas os tipos de evasão, dentres estes, os que foram observados nos dados analisados
+                    incluem:
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="(COD 004) - Forma de perda de vínculo com a instituição aplicada ao aluno que não 
+                        efetuar a matrícula nem o trancamento em um período letivo, caracterizando o abandono de curso.">
+                        Cancelamento por abadono
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-content="(COD 021) - Forma de perda de vínculo com a instituição aplicada ao aluno que for 
+                        reprovado por falta em todas as disciplinas no período.">
+                        Cancelamento por reprovação por falta
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-content="(COD 022) - Forma de perda de vínculo com a instituição aplicada ao aluno que 
+                        reprovar três vezes a mesma disciplina.">
+                        Cancelamento por reprovação
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-content="(COD 005) - Forma de perda de vínculo com a instituição aplicada ao aluno que, 
+                        no período de vencimento do prazo máximo fixado para integralização curricular, não requerer 
+                        prorrogação de prazo para conclusão do curso.">
+                        Cancelamento
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="Forma de perda de vínculo com o curso aplicada ao aluno que ingressa em outro curso.">
+                        Cancelado novo ingresso outro curso
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom" data-content="(COD 006) - Forma de perda de vínculo com o curso aplicada ao aluno que 
+                        optar por outro curso da mesma área (Reopção).">
+                        Cancelamento por mudança de curso
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="(COD 007) - Forma de perda de vínculo com a instituição por decisão judicial.">
+                        Cancelamento por decisão judicial
+                    </a>
+                    ,
+
+                    <a id="popover" data-html="true" role="button" data-container="body" data-toggle="popover"
+                        data-placement="bottom"
+                        data-content="(COD 002) - Forma de perda de vínculo com a instituição aplicada ao aluno que 
+                        tenha assegurada a sua admissão por transferência facultativa ou obrigatória em outra Instituição de Ensino Superior.">
+                        Transferencia para outra instituição de ensino
+                    </a>
+                    .
+
+                    <br>
+                    Podemos notar que o abandono do curso é a maior causa de evasão das mulheres, com 33,33% do total de
+                    evadidas. Logo após tem a evasão por reprovação, dessas a mais frequente é a reprovação por faltas
+                    com 23,81%, em seguida a evasão por 3 reprovações em uma mesma disciplina, nesse caso, a aluna ainda
+                    pode recorrer com um processo que, caso seja negado, leva ao cancelamento da matrícula do aluno.
+                    Este, por sua vez, pode tentar novo vestibular e voltar para o curso, representando 22,75% do valor
+                    total de ingressantes femininas.
+                </h6>
+
+                <h3>Então...</h3>
+                <h6>
+                    A proporção de mulheres que ingressam no curso é pequena quando comparada a dos homens. Essa é uma
+                    realidade sobre a qual atuamos diariamente e isso pode começar por você, aluna de computação@ufcg,
+                    falando sobre o curso, suas experiências, as oportunidades a que tem acesso e ainda terá após
+                    formada.
+                    As dificuldades são naturais e podemos superá-las.
+                    <br>
+                    O segundo ponto observado é que o gênero não é fator determinante para ter sucesso no curso, o que
+                    podemos perceber pela taxa de conclusão das mulheres que está dentro da média observada no curso
+                    para todos os alunos. Isso é uma escolha! <br>
+                    Vamos em frente, sempre... Como disse Marie Curie, "Na vida, não existe nada a se temer, apenas a
+                    ser compreendido".
+
                 </h6>
             </section>
 
             <section id="banco-de-ideias" class="container-fluid">
                 <h1 class="text-left">Banco de ideias</h1>
                 <h6>
-                    O banco de ideias tem como objetivo ser um espaço aberto para contribuição de ideias para o futuro
-                    do Raio-X das mulheres do curso de Ciência da Computação na Universidade Federal de Campina Grande
-                    (UFCG). O Elas@Computação enquanto organização iniciou esse projeto e pretende aprofundar as
-                    análises aqui realizadas. Para isso, é importante ouvirmos a comunidade open source a respeito de
-                    melhorias e aprimoramentos que podem ser realizados no futuro.
-                    Para contribuir com o futuro das análises do Raio-X, acesse nosso Banco de ideias
-                    e crie sua issue com sugestões.
-                    Acesse todos os dados utilizados nas
-                    visualizações e as estatisticas apresentadas nesta análise e contribua com o nosso banco de ideias:
+                    Que Raio-X você gostaria de ver sobre a participação de mulheres no nosso curso? <br>
+                    O banco de ideias tem como objetivo ser um espaço aberto para contribuição da comunidade acadêmica
+                    sobre a continuidade do Raio-X. O Elas@Computação enquanto organização iniciou esse projeto e
+                    pretende realizar novas análises de dados sobre a participação de mulheres no curso. Para isso, é
+                    importante a participação de todos a respeito de melhorias e aprimoramentos que podem ser realizados
+                    no futuro. Para contribuir com o futuro das análises do Raio-X, acesse nosso Banco de ideias e crie
+                    sua issue no github com sugestões. Acesse todos os dados utilizados nas visualizações e as
+                    estatísticas apresentadas nesta análise e contribua com o nosso banco de ideias:
                 </h6>
 
                 <div class="d-flex justify-content-center">
@@ -391,31 +483,31 @@
 
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="row d-flex float-left">
-                            <a href="https://www.instagram.com/elascomputacao" class="icon" target="_blank">
-                                <span class="fa-stack fa-3x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                           <a href="https://github.com/elasComputacao" class="icon" target="_blank">
-                                <span class="fa-stack fa-3x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                            <a href="https://elascomputacao.github.io/" class="icon" target="_blank">
-                                <span class="fa-stack fa-3x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                            <a href="https://dev.to/elascomputacao" class="icon" target="_blank">
-                                <span class="fa-stack fa-3x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        
+                        <a href="https://www.instagram.com/elascomputacao" class="icon" target="_blank">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/elasComputacao" class="icon" target="_blank">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://elascomputacao.github.io/" class="icon" target="_blank">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://dev.to/elascomputacao" class="icon" target="_blank">
+                            <span class="fa-stack fa-3x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -426,7 +518,7 @@
                     <h6>© 2020 Elas@Computação</h6>
                 </div>
             </div>
-            
+
         </footer>
     </section>
 </body>
@@ -437,9 +529,9 @@
 
 <!-- functions -->
 <script type="text/javascript" src="project/functions/back_to_top.js"></script>
-<script type="text/javascript" src="project/functions/smothscroll.js"></script>
-<script type="text/javascript" src="project/functions/popover.js"></script>
 <script type="text/javascript" src="project/functions/smartscroll.js"></script>
+<script type="text/javascript" src="project/functions/popover.js"></script>
+<script type="text/javascript" src="project/functions/smothscroll.js"></script>
 
 <!-- visualizations -->
 <script type="text/javascript" src="project/visus/ingresso.js"></script>

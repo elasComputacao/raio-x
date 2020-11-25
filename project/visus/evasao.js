@@ -1,4 +1,4 @@
-var yourV8Spec ={
+var yourV8Spec = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "title": {
     "text": "Tipo de evasão das mulheres desde 2000.1",
@@ -8,7 +8,7 @@ var yourV8Spec ={
   },
   "width": 600,
   "height": 600,
-  "padding": {"left": 125, "top": 150, "right": 105},
+  "padding": {"left": 125, "top": 170, "right": 140},
   "autosize": {"type": "none", "contains": "padding"},
   "signals": [{"name": "radius", "update": "width / 2"}],
   "data": [
@@ -16,9 +16,8 @@ var yourV8Spec ={
       "name": "table",
       "values": [
         {"key": "ABANDONO", "value": 63, "category": 0},
-        {"key": "REINGRESSO MESMO CURSO", "value": 55, "category": 0},
-        {"key": "REPROVOU POR FALTAS", "value": 45, "category": 0},
-        {"key": "3 REPROVAÇÕES", "value": 43, "category": 0},
+        {"key": "REPROVAÇÃO POR FALTAS", "value": 45, "category": 0},
+        {"key": "3 REPROVAÇÕES MESMA DISCIPLINA", "value": 43, "category": 0},
         {"key": "CANCELAMENTO", "value": 28, "category": 0},
         {"key": "INGRESSO OUTRO CURSO", "value": 6, "category": 0},
         {"key": "MUDANÇA CURSO", "value": 2, "category": 0},

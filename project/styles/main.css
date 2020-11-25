@@ -46,7 +46,10 @@ h6 {
     border-bottom: solid 0.4vh #fff6f3;
 }
 
-.topnav a:hover {
+#topnav-sobre:hover,
+#topnav-raio-x:hover,
+#topnav-banco-de-ideias:hover,
+#topnav-contato:hover {
     color: #d27c90;
     border-bottom: solid 0.4vh #d27c90;
 }
@@ -68,14 +71,31 @@ h6 {
 }
 
 #background-raio-x {
-    background-color: rgb(248, 255, 251);
-    height: 100%;
-    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: url("../assets/elascomputacao.jpg")50%/ cover;
+    filter: blur(4px) brightness(60%);
+    box-shadow: rgba(43,43,43,0.53) 1px 2px 8px;
 }
 
-#background-image {
-    padding-top: 20vh;
-    height: 100vh;
+#background h6 {
+    position: relative;
+    height: 55vh;
+    margin-top: -53vh;
+    color: white !important;
+    font-weight: 600 !important;
+    filter: blur(0px) brightness(100%) !important;
+    font-size: 15vh !important;
+}
+
+#background h3 {
+    position: relative;
+    height: 55vh;
+    margin-top: -50vh;
+    color: white !important;
+    filter: blur(0px) brightness(100%) !important;
+    font-size: 5vh !important;
 }
 
 #content {
