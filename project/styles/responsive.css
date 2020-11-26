@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+    
+    h1 {
+        font-size: 3.5vh !important;
+    }
+
+    h3 {
+        font-size: 2.7vh !important;
+    }
+
+    h6 {
+        font-size: 2.5vh !important;
+    }
+    
+    #content {
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    .fa-stack {
+        font-size: 6vh !important;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}

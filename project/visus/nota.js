@@ -1,6 +1,9 @@
 var yourV3Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Comparativo da média geral com a média das mulheres por período",
+  "title": {
+    "text":"Distribuição da média de ingresso das mulheres e a média geral",
+    "fontSize": 15
+  },
   "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/main/data/dados-processados/notas.csv"},
   "encoding": {
       "x": {

@@ -1,0 +1,9 @@
+.navbar {
+   opacity: 1;
+   transition: opacity 0.5s ease;
+}
+
+.navbar-hide {
+   pointer-events: none;
+   opacity: 0;
+}
