@@ -12,7 +12,7 @@ var yourV6Spec = {
       {"calculate": "ceil (datum.id/10)", "as": "row"},
       {"calculate": "datum.id - datum.row*10", "as": "col"}
     ],
-    "mark": {"type": "point", "filled": true, "tooltip":true},
+    "mark": {"type": "point", "filled": true},
     "encoding": {
       "x": {"field": "col", "type": "ordinal", "axis": null},
       "y": {"field": "row", "type": "ordinal", "axis": null},
@@ -22,7 +22,10 @@ var yourV6Spec = {
       "color": {
         "field": "tipo",
         "type": "nominal",
-        "legend": null,
+        "legend": {
+          "rowPadding":5,
+          "symbolType": "circle"
+        },
         "scale": {
           "domain": ["Evadido", "Graduado", "Regular", "Reingresso"],
           "scheme": "set2"
