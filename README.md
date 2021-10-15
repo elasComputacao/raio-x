@@ -103,3 +103,9 @@ O Elas@computação surge com o objetivo de reunir mulheres do curso de Ciência
 -  [Facebook](https://www.facebook.com/elascomputacao)
 
 - Email: elas@computacao.ufcg.edu.br
+
+## Colaboradores
+
+* [Beatriz Miranda](https://github.com/beatrizadm)
+* [Ivyna Santino](https://github.com/ivynasantino)
+* Lívia Sampaio
