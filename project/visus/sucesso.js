@@ -1,9 +1,9 @@
-var yourV9Spec = {
+var yourV11Spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
-    "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/dados-desempenho/data/dados-processados/desempenho.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/dados-sucesso-insucesso/data/dados-processados/sucesso_insucesso.csv"},
     "title": {
-      "text": "Top 20 de desempenho nas disciplinas",
+      "text": "Top 20 de taxa de sucesso nas disciplinas",
       "anchor": "middle"
     },
     "width": 450,
@@ -13,7 +13,7 @@ var yourV9Spec = {
       "x": {
         "field": "value",
         "type": "quantitative",
-        "title": "Mediana das notas"
+        "title": "Percentual de sucesso"
       },
       "y": {
         "field": "nome_disciplina",
@@ -47,7 +47,7 @@ var yourV9Spec = {
         "encoding": {
           "color": {
             "scale": {"range": ["#d95f02", "#1b9e77"]},
-            "field": "mediana",
+            "field": "sexo",
             "type": "nominal",
             "title": "Gênero"
           },
@@ -58,7 +58,4 @@ var yourV9Spec = {
     ]
   };
 
-  vegaEmbed("#vis9", yourV9Spec);
-
-
-  
+  vegaEmbed("#vis11", yourV11Spec);

@@ -1,4 +1,4 @@
-{
+var yourV10Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Two vertically concatenated charts that show a histogram of precipitation in Seattle and the relationship between min and max temperature.",
   "title": {
@@ -35,5 +35,7 @@
       }
     }
   ]
-}
+};
+
+vegaEmbed("#vis10", yourV10Spec);
 
