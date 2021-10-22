@@ -109,3 +109,4 @@ O Elas@computação surge com o objetivo de reunir mulheres do curso de Ciência
 * [Beatriz Miranda](https://github.com/beatrizadm)
 * [Ivyna Santino](https://github.com/ivynasantino)
 * [Lívia Sampaio](https://github.com/liviamrs)
+* [Marcella Siqueira](https://github.com/marcellasiqueira)
