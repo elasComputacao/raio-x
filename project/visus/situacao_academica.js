@@ -3,6 +3,7 @@ var yourV10Spec = {
   "description": "Two vertically concatenated charts that show a histogram of precipitation in Seattle and the relationship between min and max temperature.",
   "title": {
     "text": "Situação acadêmica entre homens e mulheres",
+    "fontSize": 15,
     "anchor": "middle"
   },
   "data": {
@@ -23,7 +24,10 @@ var yourV10Spec = {
           "type": "quantitative",
           "title": "Quantidade de estudantes"
         },
-        "tooltip": {"field": "count", "type": "quantitative"},
+        "tooltip": [
+          {"field": "sexo", "type": "ordinal", "title": "Sexo"},
+          {"field": "count", "type": "quantitative", "title": "Quantidade"}
+        ],
         "color": {
           "field": "sexo",
           "title": "Gênero",

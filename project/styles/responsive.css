@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { /* laptop */
     
     h1 {
         font-size: 3.5vh !important;
@@ -18,10 +18,29 @@
     }
 
     .fa-stack {
-        font-size: 6vh !important;
+        font-size: 5vh !important;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* tablet */
+    h1 {
+        font-size: 3vh !important;
+    }
+
+    h3 {
+        font-size: 2.2vh !important;
+    }
+
+    h6 {
+        font-size: 2vh !important;
+    }
     
+    #content {
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .fa-stack {
+        font-size: 4vh !important;
+    }
 }

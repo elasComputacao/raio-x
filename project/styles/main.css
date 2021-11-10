@@ -4,14 +4,14 @@ body {
 
 h1 {
     font-size: 4vh !important;
-    padding-top: 7vh;
+    padding-top: 6vh;
     text-align: center;    
     font-family: 'Poppins', sans-serif;
     color:#d27c90;
 }
 
 h3 {
-    padding-top: 5vh;
+    padding-top: 4vh;
     font-size: 3vh !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700 !important;
@@ -67,37 +67,40 @@ h6 {
 }
 
 .btn:focus {
-    outline: none!important;
+    outline: none !important;
 }
 
 #background-raio-x {
     overflow: hidden;
     position: relative;
     height: 100vh;
+    z-index:1;
     background: url("../assets/elascomputacao.jpg")50%/ cover;
     filter: blur(4px) brightness(60%);
     box-shadow: rgba(43,43,43,0.53) 1px 2px 8px;
 }
 
-#background h6 {
-    position: relative;
-    height: 55vh;
-    margin-top: -53vh;
-    color: white !important;
-    font-weight: 600 !important;
-    filter: blur(0px) brightness(100%) !important;
-    font-size: 15vh !important;
-}
-
 #background h3 {
     position: relative;
-    height: 55vh;
-    margin-top: -50vh;
+    height: 60vh;
+    margin-top: -60vh;
     color: white !important;
-    filter: blur(0px) brightness(100%) !important;
-    font-size: 5vh !important;
+    z-index:2;
+    font-size: 15vh !important;
+    font-weight: 600 !important;
 }
 
+#background h6 {
+    position: relative;
+    height: 45vh;
+    margin-top: -45vh;
+    color: white !important;
+    z-index:2;
+    font-size: 4.5vh !important;
+    font-weight: 700 !important;
+}
+
+/* raio-x */
 #content {
     padding-left: 20vh;
     padding-right: 20vh;
@@ -108,60 +111,72 @@ h6 {
     text-decoration: none;
     padding: 2vh;
     color: white;
-    background-color: #f1a699;
     border-radius: 1vh;
-    margin-right: 4vh !important;
-    margin-bottom: 10vh;
+    margin-right: 2vh !important;
+    margin-bottom: 7vh;
 }
 
 .btn-banco-de-ideias:hover {
     text-decoration: none;
     color: white;
+}
+
+#btn-banco-de-dados {
+    background-color: #c4c4c4;
+}
+
+#btn-banco-de-dados:hover {
+    background-color: #a5a5a5;
+}
+
+#btn-contribuir {
+    background-color: #f1a699;
+}
+
+#btn-contribuir:hover {
     background-color: #f19181;
 }
 
+.visualization {
+    overflow-x: auto;
+}
 
 /* contato */
 #contato {
     height: auto;
-    background-image: url('../assets/background-footer.png');
+    /*background-image: url('../assets/background-footer.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color:#fff6f3;
+    background-size: cover;*/
+    background-color:#fff2ee;
     box-shadow: rgba(43,43,43,0.53) 1px 2px 8px;
 }
 
 #contato h1 {
     color: #d27c90;
-    padding-top:2vh;
-    padding-left: 3vh;
+    padding-top:1.5vh;
+    font-size: 3.3vh !important;
 }
 
 #contato h6 {
     font-family: 'Montserrat', sans-serif;
     color: #2f4858;
-    font-size: 1.9vh !important;
+    font-size: 1.8vh !important;
     font-weight: 600 !important;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.icon{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .icon {
+    margin: 0 !important;
+    padding-right: 0.7vh !important;
     color: #a66f96;
 }
 
 .icon:hover {
     color: #75648d;
+    transform: scale(1.1);
 }
-
 .card a:hover {
     text-decoration: none;
     color: #2f4858;
@@ -169,7 +184,11 @@ h6 {
 
 .card .card-body {
     color: #2f4858;
+    padding: 1vh 0 1vh 1vh !important;
+}
 
+.card:hover .col-10 {
+    background-color: #e4e4e4;
 }
 
 .card .col-2 {
@@ -177,7 +196,7 @@ h6 {
     background-color: #a66f96;
 }
 
-.card a:hover .col-2{
+.card:hover .col-2 {
     text-decoration: none; 
     background-color:  #75648d;
 }

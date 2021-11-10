@@ -36,23 +36,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="project/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="project/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="project/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="project/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="project/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="project/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="project/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="project/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="project/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="project/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="project/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="project/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="project/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="project/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="project/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="project/favicon/favicon-16x16.png">
 </head>
 
 <body>
@@ -82,19 +68,6 @@
                     <li class="nav-item">
                         <a class="nav-link" id="topnav-contato" href="#contato">Contato</a>
                     </li>
-                    <!--
-                    <li class="nav-item dropdown">
-                        <a class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            onclick="if (document.activeElement != document.body) document.activeElement.blur();">
-                            Idioma
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Português</a>
-                            <a class="dropdown-item" href="#">Inglês</a>
-                        </div>
-                    </li>
-                    -->
                 </ul>
             </nav>
         </header>
@@ -104,8 +77,8 @@
         <section id="background">
             <div id="background-raio-x" class="img-fluid img-responsive">
             </div>
-            <h6 class="text-center">Raio-X</h6>
-            <h3 class="text-center">Resgate histórico das mulheres de computação@ufcg</h3>
+            <h3 class="text-center">Raio-X</h3>
+            <h6 class="text-center">Resgate histórico das mulheres de Computação@UFCG</h6>
         </section>
 
         <div id="content">
@@ -167,7 +140,7 @@
                     visualizar o ingresso geral dos alunos no curso, foi analisada a quantidade de homens e mulheres que
                     entram a cada período.
                 </h6>
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis1"></div>
                 </div>
                 <h6>
@@ -196,7 +169,7 @@
                     ingresso, tipo de cota utilizada e idade.
 
                 </h6>
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis2"></div>
                 </div>
                 <h6>
@@ -210,7 +183,7 @@
                     zerou nos últimos 5 anos.
 
                 </h6>
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis3"></div>
                 </div>
                 <h6>
@@ -225,7 +198,7 @@
                     é de 629,82 pontos.
 
                 </h6>
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis4"></div>
                 </div>
                 <h6>
@@ -249,7 +222,7 @@
                     diferentes origens.
 
                 </h6>
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis5"></div>
                 </div>
                 <h6>
@@ -260,15 +233,38 @@
 
                 </h6>
 
-                <h3>Desempenho</h3>    
-                <div class="d-flex justify-content-center">
+                <h3>Como é o desempenho no curso?</h3>
+                <h6>Para analisar o desempenho foram selecionadas as 20 disciplinas que mais retêm alunos no curso, a
+                    taxa de retensão foi definida pela razão entre
+                    o número de reprovações por nota e/ou por falta dividido pelo número de matriculados na disciplina.
+                    É possível observar que os homens apresentam melhor
+                    desempenho na maioria das disciplinas específicas de computação e as mulheres nas disciplinas
+                    das áreas de mateḿatica e física, sendo até 25% e 10% melhores,
+                    respectivamente. Mesmo assim, vale ressaltar que na metade das disciplinas de computação listadas as
+                    mulheres apresentam mediana acima de 7,0.
+
+                </h6>
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis9"></div>
                 </div>
 
-                <h3>Sucesso</h3>    
-                <div class="d-flex justify-content-center">
+                <h3>Como é o sucesso no curso?</h3>
+                <h6>A taxa de sucesso foi definida como a razão entre a quantidade de aprovados dividido pela quantidade
+                    de situações,
+                    que são: o número de reprovações por nota e/ou por falta e o número de aprovados na disciplina.
+                </h6>
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis11"></div>
                 </div>
+                <h6>Pode-se observar comportamentos parecidos nas curvas dos resultados de sucesso nas disciplinas entre
+                    homens e mulheres. A diferença maior esta relacionada às disciplinas de matematica e fısica, como
+                    Probabilidade e Estatística, Matematica Discreta e Fısica Clássica, pois as
+                    mulheres possuem uma maior taxa de sucesso nessas disciplinas, como já demonstrado anteriormente
+                    com as medianas mais altas do que as dos homens. Por outro lado, os homens tem maior taxa de sucesso
+                    na
+                    disciplina de Projeto de Software. Como resultado, tem-se que a taxa de sucesso varia entre 58% e72%
+                    para as mulheres e 64% e 75% para os homens.
+                </h6>
 
                 <h3>Qual a situação acadêmica até então?</h3>
                 <h6>
@@ -278,9 +274,12 @@
                     antes de concluí-lo), os alunos graduados, os alunos regulares (que ainda estão cursando a
                     graduação) e os alunos reingressantes (que saíram do curso e retornaram com nova matrícula).
                 </h6>
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
+                    <!--
                     <div id="vis6"></div>
                     <div id="vis7"></div>
+                    -->
+                    <div id="vis10"></div>
                 </div>
                 <h6>
                     Quanto à situação acadêmica das mulheres, foi possível analisar que a taxa de conclusão das mulheres
@@ -291,11 +290,7 @@
 
                 </h6>
 
-                <div class="d-flex justify-content-center">
-                    <div id="vis10"></div>
-                </div>
-
-                <div class="d-flex justify-content-center">
+                <div class="visualization d-flex justify-content-center">
                     <div id="vis8"></div>
                 </div>
                 <h6>
@@ -383,7 +378,7 @@
                 <h3>Então...</h3>
                 <h6>
                     A proporção de mulheres que ingressam no curso é pequena quando comparada a dos homens. Essa é uma
-                    realidade sobre a qual atuamos diariamente e isso pode começar por você, aluna de computação@ufcg,
+                    realidade sobre a qual atuamos diariamente e isso pode começar por você, aluna de Computação@UFCG,
                     falando sobre o curso, suas experiências, as oportunidades a que tem acesso e ainda terá após
                     formada.
                     As dificuldades são naturais e podemos superá-las.
@@ -409,13 +404,13 @@
                     estatísticas apresentadas nesta análise e contribua com o nosso banco de ideias:
                 </h6>
 
-                <div class="d-flex justify-content-center">
-                    <a class="btn-banco-de-ideias" alt="Base de dados" target="_blank" title="Base de dados"
-                        href="https://github.com/elasComputacao/raio-x-dados" type="button">
+                <div class="d-flex justify-content-left">
+                    <a id="btn-banco-de-dados" class="btn-banco-de-ideias" alt="Base de dados" target="_blank"
+                        title="Base de dados" href="https://github.com/elasComputacao/raio-x-dados" type="button">
                         Base de dados
                     </a>
-                    <a class="btn-banco-de-ideias" alt="Contribuir com o banco de ideias" target="_blank"
-                        title="Contribuir com o banco de ideias"
+                    <a id="btn-contribuir" class="btn-banco-de-ideias" alt="Contribuir com o banco de ideias"
+                        target="_blank" title="Contribuir com o banco de ideias"
                         href="https://github.com/elasComputacao/raio-x/projects/2">
                         Contribuir com o banco de ideias
                     </a>
@@ -431,104 +426,115 @@
 
     <section class="container-fluid" id="contato">
         <footer>
-
-            <div class="row">
-                <div class="col-lg">
-                    <h1 class="text-left">Contato</h1>
+            <div id="footer-raio-x" class="img-fluid img-responsive">
+                <div class="row">
+                    <div class="col-lg-1 col-md-0 col-sm-0"></div>
+                    <div class="col-lg-11">
+                        <h1 class="text-left">Contato</h1>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="row no-gutters">
-                        <div class="card col-12">
-                            <a href="https://goo.gl/maps/xx1zhPUttKVzUSTQ6" target="_blank">
-                                <div class="row no-gutters">
-                                    <div class="col-2 d-flex justify-content-center">
-                                        <svg class="align-self-center justify-content-center"
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="card-body">
-                                            <h6 class="card-text">
-                                                Universidade Federal de Campina Grande - UFCG
-                                            </h6>
+                <div class="row">
+
+                    <div class="col-lg-1 col-md-0 col-sm-0"></div>
+
+                    <div class="col-lg-3">
+
+                        <div class="row no-gutters">
+                            <div class="card col-12">
+                                <a href="mailto:elas@computacao.ufcg.edu.br">
+                                    <div class="row no-gutters">
+                                        <div class="col-2 d-flex justify-content-center">
+                                            <svg class="align-self-center justify-content-center"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                                </path>
+                                                <polyline points="22,6 12,13 2,6"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h6 class="card-text">elas@computacao.ufcg.edu.br</h6>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="card col-12">
+                                <a href="https://goo.gl/maps/xx1zhPUttKVzUSTQ6" target="_blank">
+                                    <div class="row no-gutters">
+                                        <div class="col-2 d-flex justify-content-center">
+                                            <svg class="align-self-center justify-content-center"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="card-body">
+                                                <h6 class="card-text">
+                                                    UFCG - Campus Sede
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-0 col-sm-0"></div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="row d-flex float-left">
+                            <a href="https://www.instagram.com/elascomputacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
                             </a>
+                            <a href="https://github.com/elasComputacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="linkedin.com/company/elas-computacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://dev.to/elascomputacao" class="icon" target="_blank">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
                         </div>
                     </div>
 
-                    <div class="row no-gutters">
-                        <div class="card col-12">
-                            <a href="mailto:elas@computacao.ufcg.edu.br">
-                                <div class="row no-gutters">
-                                    <div class="col-2 d-flex justify-content-center">
-                                        <svg class="align-self-center justify-content-center"
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path
-                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                            </path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="card-body">
-                                            <h6 class="card-text">elas@computacao.ufcg.edu.br</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-lg-1 col-md-0 col-sm-0"></div>
+
+                </div>
+
+                <div class="row" style="padding-bottom: 2vh;">
+                    <div class="col d-flex justify-content-center align-items-end">
+                        <img src="project/assets/elas-logo.png" style="height: 4vh; padding: 0 0 1vh 0;" />
+                        <h6>© 2021 Elas@Computação</h6>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-0 col-sm-0"></div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="row d-flex float-left">
-                        <a href="https://www.instagram.com/elascomputacao" class="icon" target="_blank">
-                            <span class="fa-stack fa-3x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <a href="https://github.com/elasComputacao" class="icon" target="_blank">
-                            <span class="fa-stack fa-3x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <a href="https://elascomputacao.github.io/" class="icon" target="_blank">
-                            <span class="fa-stack fa-3x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                        <a href="https://dev.to/elascomputacao" class="icon" target="_blank">
-                            <span class="fa-stack fa-3x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-bottom: 2vh;">
-                <div class="col d-flex justify-content-center align-items-end">
-                    <img src="project/assets/logo-elas-horizontal.png" style="height: 6vh" />
-                    <h6>© 2020 Elas@Computação</h6>
-                </div>
             </div>
 
         </footer>
@@ -555,7 +561,7 @@
 <script type="text/javascript" src="project/visus/conclusao-mulheres.js"></script>
 <script type="text/javascript" src="project/visus/evasao.js"></script>
 <script type="text/javascript" src="project/visus/situacao_academica.js"></script>
-<script type="text/javascript" src="project/visus/mediana_notas.js"></script>
+<script type="text/javascript" src="project/visus/desempenho.js"></script>
 <script type="text/javascript" src="project/visus/sucesso.js"></script>
 
 </html>
