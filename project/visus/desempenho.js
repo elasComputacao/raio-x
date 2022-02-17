@@ -1,12 +1,12 @@
-var yourV11Spec = {
+var yourV9Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
   "data": {
-    "url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/dados-sucesso-insucesso/data/dados-processados/sucesso_insucesso.csv"
+    "url": "https://raw.githubusercontent.com/elasComputacao/raio-x-dados/dados-desempenho/data/dados-processados/desempenho.csv"
   },
   "title": {
-    "text": "Taxa de sucesso das top 20 disciplinas",
-    "fontSize": 15,
+    "text": "Desempenho das top 20 disciplinas", 
+    "fontSize": 15, 
     "anchor": "middle"
   },
   "width": 450,
@@ -15,8 +15,8 @@ var yourV11Spec = {
     "x": {
       "field": "value",
       "type": "quantitative",
-      "title": "Percentual de sucesso",
-      "scale": {"domain": [0.37, 0.8]}
+      "title": "Mediana das notas",
+      "scale": {"domain": [4.8, 8]}
     },
     "y": {
       "field": "nome_disciplina",
@@ -26,8 +26,8 @@ var yourV11Spec = {
     },
     "tooltip": [
       {"field": "nome_disciplina", "type": "nominal", "title": "Disciplina"},
-      {"field": "sexo", "type": "nominal", "title": "Sexo"},
-      {"field": "value", "type": "quantitative", "title": "Sucesso(%)"}
+      {"field": "mediana", "type": "nominal", "title": "Sexo"},
+      {"field": "value", "type": "quantitative", "title": "Mediana"}
     ]
   },
   "layer": [
@@ -43,9 +43,9 @@ var yourV11Spec = {
       "encoding": {
         "color": {
           "scale": {"range": ["#d95f02", "#1b9e77"]},
-          "field": "sexo",
+          "field": "mediana",
           "type": "nominal",
-          "title": "Gênero"
+          "title": "Sexo"
         },
         "size": {"value": 40},
         "opacity": {"value": 1}
@@ -54,4 +54,7 @@ var yourV11Spec = {
   ]
 };
 
-vegaEmbed("#vis11", yourV11Spec);
+  vegaEmbed("#vis9", yourV9Spec);
+
+
+  

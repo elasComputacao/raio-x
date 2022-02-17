@@ -4,11 +4,11 @@ var yourV8Spec = {
     "text": "Tipo de evasão das mulheres desde 2000.1",
     "fontSize": 15,
     "subtitle": " ",
-    "subtitlePadding": 60
+    "subtitlePadding": 20
   },
   "width": 600,
-  "height": 600,
-  "padding": {"left": 125, "top": 170, "right": 140},
+  "height": 400,
+  "padding": {"left": 125, "top": 52, "right": 140, "bottom": 5},
   "autosize": {"type": "none", "contains": "padding"},
   "signals": [{"name": "radius", "update": "width / 2"}],
   "data": [
