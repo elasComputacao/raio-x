@@ -54,6 +54,11 @@ h6 {
     border-bottom: solid 0.4vh #d27c90;
 }
 
+#topnav-navbarDropdown:hover {
+    color: #d27c90;
+    border-bottom: solid 0.4vh #d27c90;
+}
+
 .topnav li {
     padding-right: 2vh;
 }
